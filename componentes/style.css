@@ -1,0 +1,138 @@
+/*Estilos generales*/
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+body{
+    
+    margin-top: 60px;
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(53, 53, 85) 0%, rgba(1, 3, 3, 0.521) 45%, rgb(42, 43, 70) 100%);    
+}
+
+/*Cabezera*/
+
+
+
+
+/*Estilos del contenido*/
+#contenido{
+    max-width: 80%;
+    margin: 0 auto;
+    
+    background-color: rgba(107, 107, 209, 0.726);
+    
+    border-radius: 20px;
+    
+    box-shadow:  0px 0px 10px black;
+}
+#contenido #caja{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 30px;
+}
+
+
+/*Estilos de las tarjetas*/
+
+#contenido #caja .tarjetas{
+    margin: 20px;
+    margin-top: 40px;
+    width: 200px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px black;
+    border: 1px solid black;
+
+}
+#contenido .tarjetas h3{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 310px;
+}
+
+/*Transformaciones de las tarjetas*/
+
+#contenido .tarjetas:hover{
+
+    box-shadow: inset 0px 0px 10px white;
+    transform: scale(1.1);
+    
+    transition: all 0.5s;
+}
+#contenido #caja a:active .tarjetas{
+    transform: scale(1
+    );
+    transition: all;
+}
+ /*
+@keyframes animacion{
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+ /*Estilos de cajas para fin de semana*/
+
+#cajasd .tarjetas{
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.384);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px black;
+}
+/*Responsive*/
+
+@media (max-width: 900px )  {
+    #contenido #caja{
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+@media (max-width: 590px){
+
+    #contenido #caja{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        
+    }
+    #contenido #caja .tarjetas, #cajasd .tarjetas{
+        width: 80%;
+        height: 150px;
+        margin: 0 auto;
+        margin-top: 20px;
+
+    }
+    #contenido .tarjetas h3{
+        line-height: 140px;
+    }
+    
+}
+
+
+
